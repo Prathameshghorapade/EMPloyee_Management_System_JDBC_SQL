@@ -17,4 +17,23 @@ public interface EmpService {
 	List<Employee>getAllEmp();
 	
 	
+List<Employee>getAllEmployeeByNames(String name);
+	
+List<Employee> getEmpsBySalary(double salary);
+	
+	Employee getEmpByEmpIDAndName(int empId,String name);
+	
+	
+List<Employee> findMaxSalaryEmployee();
+	
+	List<Employee> findMinSalaryEmployee();
+	
+	double findAvgSalary();
+	
+	
+List<Employee> findAllSortedBySalaryDesc();
+	
+	List<Employee> findAllSortedBySalaryAcen();
+	
+	
 }

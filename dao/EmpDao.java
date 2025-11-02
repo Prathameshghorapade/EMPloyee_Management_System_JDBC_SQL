@@ -17,5 +17,36 @@ public interface EmpDao {
 	List<Employee>getAllEmployee();
 	
 	
+	List<Employee>getAllEmployeeByNames(String name);
+	
+	List<Employee> getEmpBySalary(double salary);
+	
+	Employee getEmpByEmpIDAndName(int empId,String name);
+	
+	
+	
+	List<Employee> findMaxSalaryEmployee();
+	
+	List<Employee> findMinSalaryEmployee();
+	
+	double findAvgSalary();
+	
+	
+	List<Employee> findAllSortedBySalaryDesc();
+	
+	List<Employee> findAllSortedBySalaryAcen();
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 }

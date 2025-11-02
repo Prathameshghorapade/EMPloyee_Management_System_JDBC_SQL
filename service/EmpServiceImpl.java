@@ -40,4 +40,51 @@ public class EmpServiceImpl implements EmpService {
 		return empDao.getAllEmployee();
 	}
 
+	@Override
+	public List<Employee> getAllEmployeeByNames(String name) {
+		
+		return empDao.getAllEmployeeByNames(name);
+	}
+
+	@Override
+	public List<Employee> getEmpsBySalary(double salary) {
+		
+		return empDao.getEmpBySalary(salary);
+	}
+
+	@Override
+	public Employee getEmpByEmpIDAndName(int empId, String name) {
+		
+		return empDao.getEmpByEmpIDAndName(empId, name);
+	}
+
+	@Override
+	public List<Employee> findMaxSalaryEmployee() {
+		
+		return empDao.findMaxSalaryEmployee();
+	}
+
+	@Override
+	public List<Employee> findMinSalaryEmployee() {
+		
+		return empDao.findMinSalaryEmployee();
+	}
+
+	@Override
+	public double findAvgSalary() {
+		
+		return empDao.findAvgSalary();
+	}
+
+	@Override
+	public List<Employee> findAllSortedBySalaryDesc() {
+		
+		return empDao.findAllSortedBySalaryDesc();
+	}
+
+	@Override
+	public List<Employee> findAllSortedBySalaryAcen() {
+		return empDao.findAllSortedBySalaryAcen();
+	}
+
 }
